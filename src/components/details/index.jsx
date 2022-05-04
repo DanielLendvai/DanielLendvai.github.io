@@ -71,7 +71,7 @@ const Details = ({ profile, loading, social, github }) => {
               {profile.location && (
                 <ListItem
                   icon={<MdLocationOn className="mr-2" />}
-                  title="Based on:"
+                  title="Based in:"
                   value={profile.location}
                 />
               )}
@@ -82,13 +82,21 @@ const Details = ({ profile, loading, social, github }) => {
                   value={profile.company}
                 />
               )}
+                {typeof social.email !== 'undefined' && social.email && (
+                  <ListItem
+                    icon={<MdMail className="mr-2" />}
+                    title="Email:"
+                    value={social.email}
+                    link={`mailto:${social.email}`}
+                  />
+                )}
               <ListItem
                 icon={<AiFillGithub className="mr-2" />}
                 title="GitHub:"
                 value={github.username}
                 link={`https://github.com/${github.username}`}
               />
-              {typeof social.twitter !== 'undefined' && social.twitter && (
+              {/* {typeof social.twitter !== 'undefined' && social.twitter && (
                 <ListItem
                   icon={<SiTwitter className="mr-2" />}
                   title="Twitter:"
@@ -96,30 +104,30 @@ const Details = ({ profile, loading, social, github }) => {
                   link={`https://twitter.com/${social.twitter}`}
                 />
               )}
-              {typeof social.linkedin !== 'undefined' && social.linkedin && (
-                <ListItem
-                  icon={<GrLinkedinOption className="mr-2" />}
-                  title="LinkedIn:"
-                  value={social.linkedin}
-                  link={`https://www.linkedin.com/in/${social.linkedin}`}
-                />
-              )}
               {typeof social.dribbble !== 'undefined' && social.dribbble && (
                 <ListItem
-                  icon={<CgDribbble className="mr-2" />}
-                  title="Dribbble:"
-                  value={social.dribbble}
-                  link={`https://dribbble.com/${social.dribbble}`}
+                icon={<CgDribbble className="mr-2" />}
+                title="Dribbble:"
+                value={social.dribbble}
+                link={`https://dribbble.com/${social.dribbble}`}
                 />
-              )}
+              )} */}
               {typeof social.behance !== 'undefined' && social.behance && (
                 <ListItem
-                  icon={<FaBehanceSquare className="mr-2" />}
-                  title="Behance:"
-                  value={social.behance}
-                  link={`https://www.behance.net/${social.behance}`}
+                icon={<FaBehanceSquare className="mr-2" />}
+                title="Behance:"
+                value={social.behance}
+                link={`https://www.behance.net/${social.behance}`}
                 />
               )}
+                {typeof social.linkedin !== 'undefined' && social.linkedin && (
+                  <ListItem
+                    icon={<GrLinkedinOption className="mr-2" />}
+                    title="LinkedIn:"
+                    value={social.linkedin}
+                    link={`https://www.linkedin.com/in/${social.linkedin}`}
+                  />
+                )}
               {typeof social.facebook !== 'undefined' && social.facebook && (
                 <ListItem
                   icon={<FaFacebook className="mr-2" />}
@@ -158,14 +166,6 @@ const Details = ({ profile, loading, social, github }) => {
                   title="Phone:"
                   value={social.phone}
                   link={`tel:${social.phone}`}
-                />
-              )}
-              {typeof social.email !== 'undefined' && social.email && (
-                <ListItem
-                  icon={<MdMail className="mr-2" />}
-                  title="Email:"
-                  value={social.email}
-                  link={`mailto:${social.email}`}
                 />
               )}
             </Fragment>

@@ -61,7 +61,7 @@ const Education = ({ loading, education }) => {
                     {education.map((item, index) => (
                       <ListItem
                         key={index}
-                        time={`${item.from} - ${item.to}`}
+                        time={`${item.to}`}
                         degree={item.degree}
                         institution={item.institution}
                       />
