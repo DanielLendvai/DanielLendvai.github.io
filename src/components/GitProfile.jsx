@@ -143,33 +143,25 @@ const GitProfile = ({ config }) => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 rounded-box">
                   <div className="col-span-1">
                     <div className="grid grid-cols-1 gap-6">
-                      {!sanitizedConfig.themeConfig.disableSwitch && (
-                        <ThemeChanger
-                          theme={theme}
-                          setTheme={setTheme}
-                          loading={loading}
-                          themeConfig={sanitizedConfig.themeConfig}
-                        />
-                      )}
                       <AvatarCard profile={profile} loading={loading} />
                       <Details
                         profile={profile}
                         loading={loading}
                         github={sanitizedConfig.github}
                         social={sanitizedConfig.social}
-                      />
+                        />
                       <Skill
                         loading={loading}
                         skills={sanitizedConfig.skills}
-                      />
+                        />
                       <Experience
                         loading={loading}
                         experiences={sanitizedConfig.experiences}
-                      />
+                        />
                       <Education
                         loading={loading}
                         education={sanitizedConfig.education}
-                      />
+                        />
                     </div>
                   </div>
                   <div className="lg:col-span-2 col-span-1">
@@ -179,12 +171,20 @@ const GitProfile = ({ config }) => {
                         loading={loading}
                         github={sanitizedConfig.github}
                         googleAnalytics={sanitizedConfig.googleAnalytics}
-                      />
+                        />
                       <Blog
                         loading={loading}
                         googleAnalytics={sanitizedConfig.googleAnalytics}
                         blog={sanitizedConfig.blog}
-                      />
+                        />
+                        {!sanitizedConfig.themeConfig.disableSwitch && (
+                          <ThemeChanger
+                            theme={theme}
+                            setTheme={setTheme}
+                            loading={loading}
+                            themeConfig={sanitizedConfig.themeConfig}
+                          />
+                        )}
                     </div>
                   </div>
                 </div>

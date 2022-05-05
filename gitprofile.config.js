@@ -13,7 +13,7 @@ const config = {
   social: {
     email: 'lendvai.daniel92@gmail.com',
     linkedin: 'dániel-lendvai-48bba5146',
-    facebook: 'https://www.facebook.com/lendvai.daniel/',
+    facebook: 'lendvai.daniel',
     dribbble: '',
     behance: '',
     medium: '',
@@ -27,10 +27,11 @@ const config = {
     'Node.js',
     'MySQL',
     'Git',
+    'C#',
     'CSS/SCSS',
     'Bootstrap',
     'Tailwind',
-  ],
+    ],
   experiences: [
     {
       company: 'Docler Holding',
@@ -70,7 +71,7 @@ const config = {
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
-    disableSwitch: false,
+    disableSwitch: true,
 
     // Should use the prefers-color-scheme media-query,
     // using user system preferences, instead of the hardcoded defaultTheme
