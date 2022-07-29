@@ -7,7 +7,7 @@ const config = {
     limit: 10, // How many projects to display.
     exclude: {
       forks: false, // Forked projects will not be displayed if set to true.
-      projects: ['portfolio'], // These projects will not be displayed. example: ['my-project1', 'my-project2']
+      projects: ['portfolio', 'calculator', 'Felkeszito'], // These projects will not be displayed. example: ['my-project1', 'my-project2']
     },
   },
   social: {
@@ -23,14 +23,11 @@ const config = {
   },
   skills: [
     'JavaScript',
-    'React.js',
-    'Node.js',
-    'MySQL',
-    'Git',
+    'React',
     'C#',
+    'Git',
+    'MySQL',
     'CSS/SCSS',
-    'Bootstrap',
-    'Tailwind',
     ],
   experiences: [
     {
@@ -48,7 +45,7 @@ const config = {
     },
     {
       institution: 'Soter-Line Education Center',
-      degree: 'Software Engineering Bootcamp',
+      degree: 'Software Engineering',
       to: 'Class of 2021',
     },
   ],
