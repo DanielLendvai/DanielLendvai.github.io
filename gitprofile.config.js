@@ -3,7 +3,7 @@
 const config = {
   github: {
     username: 'daniellendvai', // Your GitHub org/user name. (Required)
-    sortBy: 'stars', // stars | updated
+    sortBy: 'updated', // stars | updated
     limit: 10, // How many projects to display.
     exclude: {
       forks: false, // Forked projects will not be displayed if set to true.
@@ -70,7 +70,7 @@ const config = {
     defaultTheme: 'lofi',
 
     // Hides the switch in the navbar
-    // Useful if you want to support a single color mode
+
     disableSwitch: true,
 
     // Should use the prefers-color-scheme media-query,
@@ -81,17 +81,20 @@ const config = {
     themes: [
       'light',
       'dark',
-      'lofi',
+      'business',
+      'acid',
       'winter',
       'procyon',
+      'business',
+      'lofi',
     ],
 
-    // Custom theme
+    // Custom theme f5f3f4 / 27f256
     customTheme: {
       primary: '#cc1150',
-      secondary: '#219aaf',
-      accent: '#e8d03a',
-      neutral: '#2A2730',
+      secondary: '#27f256',
+      accent: '#27f256',
+      neutral: '#27f256',
       'base-100': '#E3E3ED',
       '--rounded-box': '3rem',
       '--rounded-btn': '3rem',
