@@ -53,7 +53,7 @@ const config = {
   blog: {
     source: 'medium', // medium | dev
     username: 'lendvai.daniel92',
-    limit: 3, // How many posts to display. Max is 10.
+    limit: 0, // How many posts to display. Max is 10.
   },
   googleAnalytics: {
     // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
