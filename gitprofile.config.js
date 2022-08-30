@@ -44,6 +44,11 @@ const config = {
       to: 'Class of 2016',
     },
     {
+      institution: 'CodeCool',
+      degree: 'Front-end Development',
+      to: 'Class of 2022',
+    },
+    {
       institution: 'Soter-Line Education Center',
       degree: 'Software Engineering',
       to: 'Class of 2021',
