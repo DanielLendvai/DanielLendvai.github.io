@@ -68,7 +68,7 @@ const config = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'lofi',
+    defaultTheme: 'garden',
 
     // Hides the switch in the navbar
 
@@ -82,12 +82,34 @@ const config = {
     themes: [
       'light',
       'dark',
+      'cupcake',
+      'bumblebee',
+      'emerald',
+      'corporate',
+      'synthwave',
+      'retro',
+      'cyberpunk',
+      'valentine',
+      'halloween',
+      'garden',
+      'forest',
+      'aqua',
+      'lofi',
+      'pastel',
+      'fantasy',
+      'wireframe',
+      'black',
+      'luxury',
+      'dracula',
+      'cmyk',
+      'autumn',
       'business',
       'acid',
+      'lemonade',
+      'night',
+      'coffee',
       'winter',
       'procyon',
-      'business',
-      'lofi',
     ],
 
     // Custom theme f5f3f4 / 27f256
