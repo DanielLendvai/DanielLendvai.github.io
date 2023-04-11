@@ -21,18 +21,18 @@ const config = {
     phone: '',
   },
   skills: [
-    'JavaScript',
+    'Angular',
     'React',
     'C#',
-    'Git',
     'MySQL',
     'CSS/SCSS',
+    'Tailwind',
     ],
   experiences: [
     {
-      company: 'Docler Holding',
-      position: 'Support Associate',
-      from: 'September 2020',
+      company: 'Webforyou inc.',
+      position: 'Frontend developer',
+      from: 'January 2023',
       to: 'Present',
     },
   ],
