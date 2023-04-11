@@ -30,7 +30,7 @@ const config = {
     ],
   experiences: [
     {
-      company: 'Webforyou inc.',
+      company: 'Webforyou ltd.',
       position: 'Frontend developer',
       from: 'January 2023',
       to: 'Present',
