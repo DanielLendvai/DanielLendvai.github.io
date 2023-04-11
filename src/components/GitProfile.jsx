@@ -155,10 +155,10 @@ const GitProfile = ({ config }) => {
                         loading={loading}
                         skills={sanitizedConfig.skills}
                         />
-                      {/* <Experience
+                      { <Experience
                         loading={loading}
                         experiences={sanitizedConfig.experiences}
-                        /> */}
+                        /> }
                       <Education
                         loading={loading}
                         education={sanitizedConfig.education}
